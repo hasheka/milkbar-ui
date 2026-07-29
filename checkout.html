@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkBar - Checkout</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <div class="header">
+        <h1>Checkout</h1>
+    </div>
+
+    <div class="content">
+
+        <!-- Delivery Address -->
+        <div class="card">
+            <h3>Delivery Address</h3>
+
+            <textarea id="address" class="input-box" placeholder="Enter your Address"></textarea>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="card">
+            <h3>Payment Method</h3>
+
+            <select id="paymentMethod" class="input-box">
+                <option>Select option</option>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+            </select>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="card">
+            <h3>Order Summary</h3>
+
+            <div id="checkoutItems"></div>
+
+            <div class="row">
+                <span>Delivery</span>
+                <span id="delivery">$10.00</span>
+            </div>
+
+            <div class="row total">
+                <span>Total</span>
+                <span id="checkoutTotal">$0.00</span>
+            </div>
+        </div>
+
+        <!-- Place Order Button -->
+        <div class="btn-wrap">
+            <button onclick="placeOrder()">
+                Place Order
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="toast">
+    Order Placed Successfully 🎉
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#E8D0D0;
+    font-family:'Inter',sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.phone{
+    width:360px;
+    min-height:780px;
+    background:var(--bg);
+    border-radius:36px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.header h1{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+}
+
+.heart-icon{
+    font-size:20px;
+}
+
+.scroll-body{
+    padding:15px;
+}
+
+.order-card{
+    background:white;
+    border-radius:15px;
+    padding:12px;
+    margin-bottom:12px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.order-img{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+    background:#FFE4E4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+}
+
+.order-meta{
+    flex:1;
+}
+
+.order-name{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.order-flavor{
+    color:gray;
+    font-size:12px;
+    margin:4px 0;
+}
+
+.stars{
+    color:orange;
+    font-size:12px;
+}
+
+.order-price{
+    color:#C0272D;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+.btn-order-now{
+    background:#C0272D;
+    color:white;
+    border:none;
+    padding:6px 12px;
+    border-radius:8px;
+    margin-top:6px;
+    cursor:pointer;
+}
+
+.qty-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.qty-btn{
+    width:25px;
+    height:25px;
+    border:1px solid #C0272D;
+    background:white;
+    color:#C0272D;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.qty-num{
+    margin:5px 0;
+    font-weight:bold;
+}
+
+.order-info-block{
+    background:#C0272D;
+    color:white;
+    margin:15px;
+    padding:15px;
+    border-radius:15px;
+}
+
+.order-info-title{
+    font-family:'Playfair Display',serif;
+    margin-bottom:10px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+}
+
+.checkout-wrap{
+    padding:0 15px 15px;
+}
+
+.btn-checkout{
+    width:100%;
+    background:#C0272D;
+    color:white;
+    border:none;
+    padding:14px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+}
+
+.chk-total{
+    background:rgba(255,255,255,0.2);
+    padding:4px 10px;
+    border-radius:8px;
+}
+
+
+#toast{
+    position:fixed;
+    bottom:60px;
+    left:50%;
+    transform:translateX(-50%);
+    background:black;
+    color:white;
+    padding:10px 15px;
+    border-radius:8px;
+    display:none;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkBar - Products</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+    <div class="header">
+        <h1>MilkBar</h1>
+        <div class="heart-icon">🤍</div>
+    </div>
+
+    <div class="scroll-body">
+
+        <div class="section-header">
+            <h3>Categories</h3>
+        </div>
+
+        <div class="categories-row">
+
+            <div class="cat-item active">
+                <div class="cat-circle">🍓</div>
+                <span>Strawberry</span>
+            </div>
+
+            <div class="cat-item">
+                <div class="cat-circle">🍫</div>
+                <span>Chocolate</span>
+            </div>
+
+            <div class="cat-item">
+                <div class="cat-circle">🍦</div>
+                <span>Vanilla</span>
+            </div>
+
+        </div>
+
+        <div class="products-list">
+
+            <div class="product-card">
+                <div class="product-img">🍓</div>
+
+                <div class="product-info">
+                    <h4>Strawberry Milkshake</h4>
+                    <p>Fresh strawberry flavour</p>
+
+                    <div class="price">$26.50</div>
+
+                    <button onclick="addToCart('Strawberry Milkshake',26.50)">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">🍫</div>
+
+                <div class="product-info">
+                    <h4>Chocolate Milkshake</h4>
+                    <p>Rich chocolate flavour</p>
+
+                    <div class="price">$35.00</div>
+
+                    <button onclick="addToCart('Chocolate Milkshake',35.00)">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-img">🍦</div>
+
+                <div class="product-info">
+                    <h4>Vanilla Milkshake</h4>
+                    <p>Classic vanilla flavour</p>
+
+                    <div class="price">$30.00</div>
+
+                    <button onclick="addToCart('Vanilla Milkshake',30.00)">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="total-bar">
+        <h3>Total : <span id="total">$0.00</span></h3>
+
+        <button onclick="goCart()">
+            🛒 Cart
+        </button>
+
+        
+    </div>
+
+</div>
+
+<!-- JS File -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>

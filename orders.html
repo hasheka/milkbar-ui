@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkBar UI - My Orders</title>
+
+```
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+```
+
+</head>
+<body>
+
+```
+<div class="phone">
+
+    <div class="header">
+        <h1>My Orders</h1>
+        <div class="heart-icon">🤍</div>
+    </div>
+
+    <div class="scroll-body">
+
+        <div id="ordersContainer">
+            <!-- Products will be loaded here automatically -->
+        </div>
+
+    </div>
+
+    <div class="order-info-block">
+
+        <div class="order-info-title">
+            Order Info
+        </div>
+
+        <div class="info-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+        </div>
+
+        <div class="info-row">
+            <span>Delivery</span>
+            <span id="delivery">$10.00</span>
+        </div>
+
+        <div class="info-row">
+            <span>Total</span>
+            <span id="grandTotal">$10.00</span>
+        </div>
+
+    </div>
+
+    <div class="checkout-wrap">
+        <button class="btn-checkout" onclick="goCheckout()">
+            🛒 Checkout
+        </button>
+    </div>
+
+</div>
+
+<div id="toast">
+    <span id="toastMsg">Updated!</span>
+</div>
+
+<script src="../js/script.js"></script>
+```
+
+</body>
+</html>
